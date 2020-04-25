@@ -1,2 +1,6 @@
 .idea/
 .docker-sync/
+composer.json
+composer.lock
+vendor/
+web/
