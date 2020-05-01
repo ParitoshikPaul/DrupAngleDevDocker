@@ -49,6 +49,18 @@ Supported Drupal versions: 8 / 7
 
 Full documentation is available at https://wodby.com/docs/stacks/drupal/local.
 
+Login to the containers:
+
+### Database(Mariadb)
+Step 1: Navigate to GUI of portainer http://portainer.drupal.docker.localhost:8000/
+Step 2: Find container with name wodby/mariadb:10.4-3.8.1 and click on shell icon and login as root.
+Step 3: Login with command `mysql -udrupal -pdrupal drupal`
+
+### Drupal
+
+Navigate to web folder to see the changes.
+
+
 ## Images' tags
 
 Images tags format is `[VERSION]-[STABILITY_TAG]` where:
@@ -126,3 +138,6 @@ This project is licensed under the MIT open source license.
 [wodby/varnish]: https://github.com/wodby/varnish
 [wodby/webgrind]: https://hub.docker.com/r/wodby/webgrind
 [wodby/xhprof]: https://hub.docker.com/r/wodby/xhprof
+
+
+
